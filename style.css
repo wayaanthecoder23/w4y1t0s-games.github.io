@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  background: #0f0f0f;
+  color: white;
+  font-family: sans-serif;
+}
+
+/* center home */
+.center {
+  text-align: center;
+  margin-top: 15%;
+}
+
+.center-text {
+  text-align: center;
+}
+
+/* glowing title */
+.glow {
+  font-size: 40px;
+  text-shadow: 0 0 10px cyan, 0 0 20px blue;
+}
+
+/* button */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: cyan;
+  color: black;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px cyan;
+}
+
+/* grid layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+/* game card */
+.card {
+  text-align: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.08);
+}
+
+/* fake game box */
+.game {
+  height: 150px;
+  background: #222;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #00ffff33;
+  transition: 0.3s;
+}
+
+.card:hover .game {
+  box-shadow: 0 0 20px cyan;
+  transform: translateY(-5px);
+}
+
+/* title under game */
+.title {
+  margin-top: 10px;
+  font-size: 16px;
+  opacity: 0.8;
+}
